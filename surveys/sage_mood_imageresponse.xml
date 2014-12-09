@@ -1,0 +1,203 @@
+<campaign>
+  <campaignUrn>urn:campaign:sitek:sagetest</campaignUrn>
+  <campaignName>Sage Daily Survey</campaignName>
+  <serverUrl>http://ec2-184-73-152-187.compute-1.amazonaws.com</serverUrl>
+
+  <surveys>
+    <survey>
+      <id>SageDailySurvey</id>
+      <title>Sage Daily Survey</title>
+      <description>This survey is designed for participants in the MIT Voice and Depression study.</description>
+      <submitText>Done! Thanks for participating. Please join again soon.</submitText>
+      <showSummary>false</showSummary>
+      <editSummary>false</editSummary>
+      <summaryText>Answer the question</summaryText>
+      <anytime>false</anytime>
+
+      <contentList>
+
+        <!-- Start Sage mood questions -->
+        <!--
+        <message>
+          <id>BeforeSageMessage</id>
+          <messageText>These questions are about your feelings and experiences today.</messageText>
+        </message>
+        -->
+
+        <prompt>
+          <id>sage1</id>
+          <displayType>event</displayType>
+          <displayLabel>How is your concentration today?</displayLabel>
+          <promptText>How is your concentration today?</promptText>
+          <!-- <promptTextMarkdown>![concentration](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_cognition.png "How is your concentration today?")</promptTextMarkdown> -->
+          <abbreviatedText>How is your concentration today?</abbreviatedText>
+          <promptType>single_choice</promptType>
+          <properties>
+            <property>
+              <key>0</key>
+              <label>![](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_cognition0.png)</label>
+            </property>
+            <property>
+              <key>1</key>
+              <label>![](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_cognition1.png)</label>
+            </property>
+            <property>
+              <key>2</key>
+              <label>![](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_cognition2.png)</label>
+            </property>
+            <property>
+              <key>3</key>
+              <label>![](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_cognition3.png)</label>
+            </property>
+            <property>
+              <key>4</key>
+              <label>![](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_cognition4.png)</label>
+            </property>
+          </properties>
+          <skippable>true</skippable>
+          <skipLabel>Skip</skipLabel>
+        </prompt>
+
+        <prompt>
+          <id>sage2</id>
+          <displayType>event</displayType>
+          <displayLabel>How is your energy today?</displayLabel>
+          <promptText>How is your energy today?</promptText>
+          <!--<promptTextMarkdown>![energy](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_fatigue.png "How is your energy today?")</promptTextMarkdown>-->
+          <abbreviatedText>How is your energy today?</abbreviatedText>
+          <promptType>single_choice</promptType>
+          <properties>
+            <property>
+              <key>0</key>
+              <label>![](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_fatigue0.png)</label>
+            </property>
+            <property>
+              <key>1</key>
+              <label>![](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_fatigue1.png)</label>
+            </property>
+            <property>
+              <key>2</key>
+              <label>![](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_fatigue2.png)</label>
+            </property>
+            <property>
+              <key>3</key>
+              <label>![](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_fatigue3.png)</label>
+            </property>
+            <property>
+              <key>4</key>
+              <label>![](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_fatigue4.png)</label>
+            </property>
+          </properties>
+          <skippable>true</skippable>
+          <skipLabel>Skip</skipLabel>
+        </prompt>
+
+        <prompt>
+          <id>sage3</id>
+          <displayType>event</displayType>
+          <displayLabel>How is your mood today?</displayLabel>
+          <promptText>How is your mood today?</promptText>
+          <!--<promptTextMarkdown>![mood](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_mood.png "How is your mood today?")</promptTextMarkdown>-->
+          <abbreviatedText>How is your mood today?</abbreviatedText>
+          <promptType>single_choice</promptType>
+          <properties>
+            <property>
+              <key>0</key>
+              <label>![](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_mood0.png)</label>
+            </property>
+            <property>
+              <key>1</key>
+              <label>![](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_mood1.png)</label>
+            </property>
+            <property>
+              <key>2</key>
+              <label>![](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_mood2.png)</label>
+            </property>
+            <property>
+              <key>3</key>
+              <label>![](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_mood3.png)</label>
+            </property>
+            <property>
+              <key>4</key>
+              <label>![](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_mood4.png)</label>
+            </property>
+          </properties>
+          <skippable>true</skippable>
+          <skipLabel>Skip</skipLabel>
+        </prompt>
+
+        <prompt>
+          <id>sage4</id>
+          <displayType>event</displayType>
+          <displayLabel>How did you sleep?</displayLabel>
+          <promptText>How did you sleep?</promptText>
+          <!--<promptTextMarkdown>![sleep](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_sleep.png "How did you sleep?")</promptTextMarkdown>-->
+          <abbreviatedText>How did you sleep?</abbreviatedText>
+          <promptType>single_choice</promptType>
+          <properties>
+            <property>
+              <key>0</key>
+              <label>![](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_sleep0.png)</label>
+            </property>
+            <property>
+              <key>1</key>
+              <label>![](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_sleep1.png)</label>
+            </property>
+            <property>
+              <key>2</key>
+              <label>![](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_sleep2.png)</label>
+            </property>
+            <property>
+              <key>3</key>
+              <label>![](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_sleep3.png)</label>
+            </property>
+            <property>
+              <key>4</key>
+              <label>![](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_sleep4.png)</label>
+            </property>
+          </properties>
+          <skippable>true</skippable>
+          <skipLabel>Skip</skipLabel>
+        </prompt>
+
+        <prompt>
+          <id>sage5</id>
+          <displayType>event</displayType>
+          <displayLabel>How much did you move today?</displayLabel>
+          <promptText>How much did you move today?</promptText>
+          <!--<promptTextMarkdown>![exercise](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_exercise.png)</promptTextMarkdown>-->
+          <abbreviatedText>How much did you move today?</abbreviatedText>
+          <promptType>single_choice</promptType>
+          <properties>
+            <property>
+              <key>0</key>
+              <label>![](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_exercise0.png)</label>
+            </property>
+            <property>
+              <key>1</key>
+              <label>![](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_exercise1.png)</label>
+            </property>
+            <property>
+              <key>2</key>
+              <label>![](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_exercise2.png)</label>
+            </property>
+            <property>
+              <key>3</key>
+              <label>![](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_exercise3.png)</label>
+            </property>
+            <property>
+              <key>4</key>
+              <label>![](https://raw.githubusercontent.com/sitek/mobile-surveys/master/sage_moodquestions/sage_exercise4.png)</label>
+            </property>
+          </properties>
+          <skippable>true</skippable>
+          <skipLabel>Skip</skipLabel>
+        </prompt>
+
+        <!-- End Sage mood questions -->
+
+      </contentList>
+    </survey>
+
+  </surveys>
+</campaign>
